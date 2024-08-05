@@ -5,3 +5,8 @@ print()
 num1=int(input("enter the value:"))
 sr=num1**(1/2)
 print("the square root of a given number=",sr)
+print()
+import math
+num2=int(input("enter the value:"))
+sr=math.sqrt(num2)
+print("the square root of a given number =",sr)
