@@ -1,6 +1,9 @@
+# taking input from the user
+# initially sum is zero
 num=int(input("enter a number="))
 sum=0
 temp=num
+# using while loop and if, else condition
 while temp>0:
     digit=temp%10
     cube=digit**3
