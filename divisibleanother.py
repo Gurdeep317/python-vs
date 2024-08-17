@@ -1,3 +1,6 @@
+# program to find numbers divisible by another number
+# using for loop is the first solution
+# using for loop and if condition
 print("the number is divisible by 13 is:")
 for i in range(1,100):
     if i%13==0:
