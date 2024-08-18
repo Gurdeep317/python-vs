@@ -1,3 +1,5 @@
+# taking num1,num2,num3 as a input from user
+#using if ,elif,else condition 
 num1=float(input("enter the num1="))
 num2=float(input("enter the num2="))
 num3=float(input("enter the num3="))
