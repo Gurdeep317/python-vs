@@ -1,14 +1,13 @@
-def findHCF(x,y):
-    # x=int(input("enter the value :"))
-    # y=int(input("enter the another value:")) 
-    # hcf=1   
+def findHCF():
+    x=int(input("enter first value:"))
+    y=int(input("enter second value:"))
     if x>y:
-        smaller=y
+        smaller = y
     else:
-        smaller=x
+        smaller = x
+    hcf=1
     for i in range(1,smaller+1):
-        if (x%i==0 and y%i==0):
+        if (x%i==0) and (y%i==0):
             hcf=i
-    x=12
-    y=30
-    print("the hcf of two numbers is:",findHCF(12,30))
+    print("the hcf of two numbers:",hcf)
+    findHCF()
