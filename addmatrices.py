@@ -1,3 +1,8 @@
+#program for add two matrices
+# firstly take two matrices as a and b
+# using for loop 
+# i is row
+# j is colomun
 a=[[2,5,6],
    [3,7,8],
    [0,8,6]]
