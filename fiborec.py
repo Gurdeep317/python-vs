@@ -1,3 +1,8 @@
+# code to display fibonacci sequence using recursion
+# using def function
+# taking n as a input from user
+# using if ,else condition 
+# using for loop
 def fibo(n):
     if n<=1:
         return n 
