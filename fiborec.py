@@ -12,6 +12,6 @@ n=int(input("enter a number:"))
 if n<=0:
     print("enter a positive numbe:")
 else:
-    print("fibonacci series")
+    print("fibonacci sequence")
     for i in range(n):
         print(fibo(i))
