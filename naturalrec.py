@@ -1,3 +1,7 @@
+# program to find sum of natural number using recursion
+# using def function
+# using if,else condition 
+# taking n as a input from user
 def sum(n):
     if n<=1:
         return n 
