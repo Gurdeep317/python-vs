@@ -1,3 +1,5 @@
+# program to transpose of a matrix
+# using for loop
 A =[[2,4,6],
     [1,3,5]]
 transpose=[[0,0],
