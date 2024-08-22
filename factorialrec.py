@@ -1,3 +1,7 @@
+# program to find factorial using recursion
+# using def function
+# taking n as a input from user
+# using if,elif,else condition
 def fact(n):
     if n==1:
         return n
