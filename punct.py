@@ -2,9 +2,9 @@
 # taking a string from user
 # using for loopusing if condition
 punc='''~!@#$%^&*()_+=-<>?:"|,./;'][]\{}'''
-a=input("enter anything here:")
+string =input("enter anything here:")
 emptystring=""
-for i in a:
+for i in string:
     if i not in punc:
         emptystring+=i
 print(emptystring)
