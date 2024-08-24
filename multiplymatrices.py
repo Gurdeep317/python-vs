@@ -1,3 +1,6 @@
+# program to multiply two matrices
+# taking two matrices
+# using for loop
 A=[[1,3,5],
    [2,4,6],
    [7,8,9]]
