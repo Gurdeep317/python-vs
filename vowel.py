@@ -1,3 +1,9 @@
+# program to count the number of each vowel
+# taking a string as a
+# taking vowels as variable which contain all variable
+# then using casefold in a
+# then take a count variable and apply keys on vowel
+# using for loop and if condition
 a="harry Potter"
 vowels="aeiou"
 a=a.casefold()
