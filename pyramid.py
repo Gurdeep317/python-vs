@@ -1,3 +1,6 @@
+# program to create pyramid pattern
+# taking no of rows from user 
+# using while loop
 num=int(input("enter a number:"))
 row=0
 while row<num:
