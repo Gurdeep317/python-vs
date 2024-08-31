@@ -7,5 +7,7 @@ print(marks)
 # sorted=sorted(marks.items(),key=lambda x:x[1])
 # print(sorted)
 
+# solution 2 sort only by values
+# sorted the marks
 sort=sorted(marks.values())
 print(sort)
