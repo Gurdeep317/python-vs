@@ -1,3 +1,4 @@
+# program to create a countdown timer
 import time
 def countdown(sec):
     while sec:
