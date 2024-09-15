@@ -4,5 +4,6 @@ f=open("kilo.py","r")
 print(len(f.readlines()))
 f.close()
 
+# using list comprehension
 lines=sum(1 for i in open("index.py"))
 print(lines)
