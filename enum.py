@@ -1,3 +1,4 @@
+# Program to Represent enum
 from enum import Enum
 
 class Day(Enum):
