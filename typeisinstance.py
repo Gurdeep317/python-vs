@@ -1,3 +1,4 @@
+# Python Program to Differentiate Between type() and isinstance()
 class smartphone:
     def name(self):
         pass
