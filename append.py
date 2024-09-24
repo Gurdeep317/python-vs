@@ -1,4 +1,4 @@
 file=open("helo.txt","a")
-file.write("hello/n"
+file.write("hello gi/n"
            "hii world")
 file.close()
