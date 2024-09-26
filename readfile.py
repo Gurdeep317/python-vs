@@ -1,3 +1,4 @@
+# Program Read a File Line by Line Into a List
 with open("data_file.txt") as f:
     content_list = f.readlines()
 
