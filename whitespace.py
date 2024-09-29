@@ -2,4 +2,4 @@
 # using  strip()
 string = "  Python "
 
-print(string.strip())hello
+print(string.strip())
