@@ -16,4 +16,3 @@ if n == s:
 else:
 
    print(n,"is not an Armstrong number")
-hello
