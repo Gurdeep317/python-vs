@@ -1,3 +1,4 @@
+# program to find the area of circle
 radius=int(input("enter a number:"))
 pi=3.14
 circlearea=pi*radius*radius
