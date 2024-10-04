@@ -1,3 +1,5 @@
+# program to find the area of triangle
+# taking input from user 
 len=int(input("enter a no"))
 breadth=int(input('enter a no'))
 height=int(input("enter a no"))
