@@ -1,5 +1,5 @@
 # program to multiply two matrices
-# taking two matrices
+# taking a and b,two matrices
 # using for loop
 A=[[1,3,5],
    [2,4,6],
