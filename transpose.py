@@ -1,4 +1,5 @@
 # program to transpose of a matrix
+# taking a matrix 
 # using for loop
 A =[[2,4,6],
     [1,3,5]]
