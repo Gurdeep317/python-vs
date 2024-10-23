@@ -1,4 +1,5 @@
 # program to swap the values
+# firstly taking value of x and y
 x=3
 y=5
 temp=x
