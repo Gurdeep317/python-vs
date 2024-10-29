@@ -1,4 +1,8 @@
 # program for simple attendance tracker
+# using class,def function,object
+# using while
+# using if ,elif,else statement
+# using for loop
 class AttendanceTracker:
   def __init__(self):
     self.attendance={}
