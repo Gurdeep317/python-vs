@@ -3,6 +3,7 @@
 # using while
 # using if ,elif,else statement
 # using for loop
+# using count
 class AttendanceTracker:
   def __init__(self):
     self.attendance={}
