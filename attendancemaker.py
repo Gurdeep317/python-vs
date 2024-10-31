@@ -4,6 +4,7 @@
 # using if ,elif,else statement
 # using for loop
 # using count
+# taking some inputs from user
 class AttendanceTracker:
   def __init__(self):
     self.attendance={}
