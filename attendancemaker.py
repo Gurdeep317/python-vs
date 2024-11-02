@@ -32,14 +32,17 @@ def main():
         if choice=="1":
            name=input("enter student name:")
            tracker.mark_attendance(name)
+
         elif choice=="2":
            tracker.view_attendance()
 
         elif choice=="3":
            print("exiting the program.")
            break
+
         else:
            print("invalid choice,please try again.")
+           
 if __name__=="__main__":
     main()
 
