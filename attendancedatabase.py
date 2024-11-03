@@ -1,3 +1,4 @@
+# program forsattendance tracker using database
 import sqlite3
 
 class AttendanceTracker:
