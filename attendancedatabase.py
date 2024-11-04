@@ -1,6 +1,7 @@
 # program forsattendance tracker using database
 # using class 
 # using class object
+# taking some inputs from user
 import sqlite3
 
 class AttendanceTracker:
