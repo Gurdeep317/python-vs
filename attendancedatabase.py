@@ -2,6 +2,7 @@
 # using class 
 # using class object
 # taking some inputs from user
+# using if else
 import sqlite3
 
 class AttendanceTracker:
