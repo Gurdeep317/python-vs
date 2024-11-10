@@ -1,5 +1,5 @@
 # program to find the number is positive,negative or zero
-# taking input from user
+# taking input(num) from user
 # using if,elif,else condition
 num=float(input("enter the value of num="))
 if num>0:
