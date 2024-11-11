@@ -1,3 +1,4 @@
+# program for prime interval
 lower=int(input("enter the value of lower="))
 upper=int(input("enter the value of upper="))
 
