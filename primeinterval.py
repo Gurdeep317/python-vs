@@ -1,5 +1,6 @@
 # program for prime interval
 # taking lower and upper limit from user
+# using for loop
 lower=int(input("enter the value of lower="))
 upper=int(input("enter the value of upper="))
 
