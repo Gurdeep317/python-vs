@@ -1,4 +1,5 @@
 # program for area of triangle
+# taking base,height as input from user
 base=int(input("enter the value of base:"))
 height=int(input("enter the value of height:"))
 area=1/2*base*height
