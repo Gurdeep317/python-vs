@@ -1,6 +1,7 @@
 # program for finding the roots of a quadratic equation
 # import math
 # taking a,b,c as a input from user
+# apply the formula
 import cmath
 a=int(input("enter the value of a="))
 b=int(input("enter the value of b="))
