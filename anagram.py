@@ -1,5 +1,5 @@
 # program to check if two strings are anagram
-# taking two strings from user
+# taking two strings input from user
 # using sort
 # using if,else condition
 a=input("enter first string:")
