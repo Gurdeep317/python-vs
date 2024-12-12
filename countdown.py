@@ -1,4 +1,7 @@
 # program to create a countdown timer
+# import time
+# usig def
+# using while loop
 import time
 def countdown(sec):
     while sec:
