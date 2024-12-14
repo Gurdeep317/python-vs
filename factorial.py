@@ -1,5 +1,6 @@
 # program to find the factorial of a number
 # to take the input from the user
+# using if,elif,else
 num=int(input("enter a number="))
 factorial=1
 # check if the number is positive,negative or zero
