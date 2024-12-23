@@ -1,5 +1,5 @@
 # use math modules
-# define function 
+# using define function 
 import random
 import string
 print("welcome to our random password generator")
