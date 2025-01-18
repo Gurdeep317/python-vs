@@ -3,7 +3,6 @@
 f=open("kilo.py","r")
 print(len(f.readlines()))
 f.close()
-
 # using list comprehension
 # using sum
 lines=sum(1 for i in open("index.py"))
