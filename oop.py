@@ -15,5 +15,6 @@ class Student:
 
 s1=Student("karan",45)
 (s1.welocme)
+
 print(s1.marks,s1.name)
 print(Student.college_name)
