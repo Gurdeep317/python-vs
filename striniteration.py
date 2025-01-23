@@ -16,6 +16,7 @@
 # print(type(a))
 # b=ord('c')
 # print(b)
+
 a="hey kaise ho"
 b="hey {c:16} kaise {d} ho".format(c="5",d="6")
 print(b)
