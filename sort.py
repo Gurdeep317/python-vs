@@ -3,6 +3,7 @@
 # using split
 # using sort
 # using for loop
+
 a=input("enter anything here:")
 b=a.split()
 for i in range (len(b)):
