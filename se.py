@@ -1,6 +1,7 @@
 # program to illustrate different set operations
 # taking two set as A and B 
 # then apply different set operations
+
 A={2,4,3,5,6,1,8}
 B={1,8,0,9,7,5,2}
 print("the union is:",A|B)
