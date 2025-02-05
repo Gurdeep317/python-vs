@@ -1,9 +1,11 @@
 # telegram bot project
+import os
 from typing import Final
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application,CommandHandler,MessageHandler,filters,ContextTypes
-TOKEN: Final ='7282707731:AAFAmQhkopcARz3Vk5Bp41tB-4zpRY8IwMQ'
-BOT_USERNAME:Final = 'aa_applebot'
+TOKEN: Final = os.getenv("TELEGRAM_BOT_TOKEN")
+BOT_USERNAME:Final = os.getenv ('aa_applebot')
 
 #Commands
 async def start_command(update:Update,context:ContextTypes.DEFAULT_TYPE):
