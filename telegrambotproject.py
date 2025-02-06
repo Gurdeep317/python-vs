@@ -68,6 +68,7 @@ if __name__=='__main__':
 
     # errors
     app.add_error_handler(error)
+    
     # polls the bot
     print('polling....')
     app.run_polling(poll_interval=3)
