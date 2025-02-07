@@ -32,6 +32,7 @@ def handle_response(text: str) -> str:
     
     return 'I do not understand what you wrote...'
 
+
 async def handle_message(update:Update,context:ContextTypes.DEFAULT_TYPE):
     message_type: str = update.message.chat.type
     text:str = update.message.text
