@@ -37,6 +37,7 @@ async def handle_message(update:Update,context:ContextTypes.DEFAULT_TYPE):
     message_type: str = update.message.chat.type
     text:str = update.message.text
     print(f'User ({update.message.chat.id}) in {message_type}:"{text}"')
+    
 
     if message_type == 'group':
         if BOT_USERNAME in text:
