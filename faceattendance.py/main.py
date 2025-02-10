@@ -1,6 +1,6 @@
 from tkinter import*
 from tkinter import ttk
-from PIL import Image,ImagesTk
+from PIL import Image,ImageTk
 class Face_Recognition_System:
     def __init__(self,root):
         self.root=root
