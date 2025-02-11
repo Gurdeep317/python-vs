@@ -14,6 +14,8 @@ class Face_Recognition_System:
 
 
 
+
+
 if __name__=="__main":
     root=Tk()
     obj=Face_Recognition_System(root)
