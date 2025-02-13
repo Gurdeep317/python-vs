@@ -7,7 +7,14 @@ class Face_Recognition_System:
         self.root.geometry("1530x790+0+0")
         self.root.title("face recognition system")
 
+        img=Image.open(r"C:\Users\lenovo\OneDrive.jpg")
+        img=img.resize((500,130),Image.ANTIALIAS)
+        self.photoimg=ImageTk.PhotoImage(img)
 
+        f_lbl=Label(self.root,image=self.photoimg)
+        f_lbl.place(x=0,y=0,width=500,height=130)
+
+    
 
 
 
