@@ -6,8 +6,8 @@ class Face_Recognition_System:
         self.root=root
         self.root.geometry("1530x790+0+0")
         self.root.title("face recognition system")
-        
-    # first image
+
+    # 1st image
         img=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures.jpg")
         img=img.resize((500,130),Image.ANTIALIAS)
         self.photoimg=ImageTk.PhotoImage(img)
