@@ -8,7 +8,7 @@ class Face_Recognition_System:
         self.root.title("face recognition system")
 
     # 1st image
-        img=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures.jpg")
+        img=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\attendaceclgpic.jpg")
         img=img.resize((500,130),Image.ANTIALIAS)
         self.photoimg=ImageTk.PhotoImage(img)
     
@@ -16,7 +16,7 @@ class Face_Recognition_System:
         f_lbl.place(x=0,y=0,width=500,height=130)
 
     # 2nd image
-        img1=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures.jpg")
+        img1=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\attendaceclgpic.jpg")
         img1=img1.resize((500,130),Image.ANTIALIAS)
         self.photoimg1=ImageTk.PhotoImage(img1)
 
@@ -24,7 +24,7 @@ class Face_Recognition_System:
         f_lbl.place(x=500,y=0,width=500,height=130)
 
     # 3rd image
-        img2=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures.jpg")
+        img2=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\attendaceclgpic.jpg")
         img2=img2.resize((500,130),Image.ANTIALIAS)
         self.photoimg2=ImageTk.PhotoImage(img2)
 
@@ -32,7 +32,7 @@ class Face_Recognition_System:
         f_lbl.place(x=1000,y=0,width=550,height=130)
 
     # background image
-        img3=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures.jpg")
+        img3=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\attendaceclgpic.jpg")
         img3=img2.resize((500,130),Image.ANTIALIAS)
         self.photoimg3=ImageTk.PhotoImage(img3)
 
