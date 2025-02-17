@@ -56,13 +56,37 @@ class Face_Recognition_System:
         # Detect face buttton
         img5=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\facedetector.jpeg")
         img5=img5.resize((220,220),Image.ANTIALIAS)
-        self.photoimg4=ImageTk.PhotoImage(img5)
+        self.photoimg5=ImageTk.PhotoImage(img5)
 
-        b1=Button(bg_img,image=self.photoimg4,cursor="hand2")
+        b1=Button(bg_img,image=self.photoimg5,cursor="hand2")
         b1.place(x=500,y=100,width=220,height=220)
 
         b1_1=Button(bg_img,text="Face Detector",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
         b1_1.place(x=500,y=300,width=220,height=40)
+
+        # Attendance face buttton
+        img6=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\facedetector.jpeg")
+        img6=img6.resize((220,220),Image.ANTIALIAS)
+        self.photoimg6=ImageTk.PhotoImage(img6)
+
+        b1=Button(bg_img,image=self.photoimg6,cursor="hand2")
+        b1.place(x=800,y=100,width=220,height=220)
+
+        b1_1=Button(bg_img,text="Attendance",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
+        b1_1.place(x=800,y=300,width=220,height=40)
+
+        # Help face buttton
+        img7=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\facedetector.jpeg")
+        img7=img7.resize((220,220),Image.ANTIALIAS)
+        self.photoimg7=ImageTk.PhotoImage(img7)
+
+        b1=Button(bg_img,image=self.photoimg6,cursor="hand2")
+        b1.place(x=1100,y=100,width=220,height=220)
+
+        b1_1=Button(bg_img,text="Help Desk",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
+        b1_1.place(x=1100,y=300,width=220,height=40)
+
+
 
     
     
