@@ -42,6 +42,17 @@ class Face_Recognition_System:
         title_lbl=Label(bg_img,text="FACE RECOGNITION ATTENDANCE SYSYTEM SOFTWARE",font=("times new roman",35,"bold"),bg="white",fg="red")
         title_lbl.place(x=0,y=0,width=1530,height=45)
 
+        # student buttton
+        img4=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\student.jpeg")
+        img4=img4.resize((220,220),Image.ANTIALIAS)
+        self.photoimg4=ImageTk.PhotoImage(img4)
+
+        b1=Button(bg_img,image=self.photoimg4,cursor="hand2")
+        b1.place(x=200,y=100,width=220,height=220)
+
+        b1_1=Button(bg_img,text="STUDENT DETAILS",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
+        b1_1.place(x=200,y=300,width=220,height=40)
+
     
     
 
