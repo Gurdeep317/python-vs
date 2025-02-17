@@ -65,7 +65,7 @@ class Face_Recognition_System:
         b1_1.place(x=500,y=300,width=220,height=40)
 
         # Attendance face buttton
-        img6=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\attendance.jpeg")
+        img6=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\attendance2.jpeg")
         img6=img6.resize((220,220),Image.ANTIALIAS)
         self.photoimg6=ImageTk.PhotoImage(img6)
 
@@ -76,7 +76,7 @@ class Face_Recognition_System:
         b1_1.place(x=800,y=300,width=220,height=40)
 
         # Help face buttton
-        img7=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\facedetector.jpeg")
+        img7=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\helpdesk.jpeg")
         img7=img7.resize((220,220),Image.ANTIALIAS)
         self.photoimg7=ImageTk.PhotoImage(img7)
 
@@ -87,7 +87,7 @@ class Face_Recognition_System:
         b1_1.place(x=1100,y=300,width=220,height=40)
 
         # Train face buttton
-        img8=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\facedetector.jpeg")
+        img8=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\train.jpeg")
         img8=img8.resize((220,220),Image.ANTIALIAS)
         self.photoimg8=ImageTk.PhotoImage(img8)
 
