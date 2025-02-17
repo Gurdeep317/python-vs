@@ -53,6 +53,17 @@ class Face_Recognition_System:
         b1_1=Button(bg_img,text="STUDENT DETAILS",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
         b1_1.place(x=200,y=300,width=220,height=40)
 
+        # Detect face buttton
+        img5=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\facedetector.jpeg")
+        img5=img5.resize((220,220),Image.ANTIALIAS)
+        self.photoimg4=ImageTk.PhotoImage(img5)
+
+        b1=Button(bg_img,image=self.photoimg4,cursor="hand2")
+        b1.place(x=500,y=100,width=220,height=220)
+
+        b1_1=Button(bg_img,text="Face Detector",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="white")
+        b1_1.place(x=500,y=300,width=220,height=40)
+
     
     
 
