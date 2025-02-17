@@ -98,7 +98,7 @@ class Face_Recognition_System:
         b1_1.place(x=200,y=580,width=220,height=40)
 
         # Photos face buttton
-        img9=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\facedetector.jpeg")
+        img9=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\photos.jpg")
         img9=img9.resize((220,220),Image.ANTIALIAS)
         self.photoimg9=ImageTk.PhotoImage(img9)
 
@@ -109,7 +109,7 @@ class Face_Recognition_System:
         b1_1.place(x=500,y=580,width=220,height=40)
 
         # Developer face buttton
-        img10=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\facedetector.jpeg")
+        img10=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\developer.jpg")
         img10=img10.resize((220,220),Image.ANTIALIAS)
         self.photoimg10=ImageTk.PhotoImage(img10)
 
@@ -120,7 +120,7 @@ class Face_Recognition_System:
         b1_1.place(x=800,y=580,width=220,height=40)
 
         # Exit face buttton
-        img11=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\facedetector.jpeg")
+        img11=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\exit.jpeg")
         img11=img11.resize((220,220),Image.ANTIALIAS)
         self.photoimg11=ImageTk.PhotoImage(img11)
 
