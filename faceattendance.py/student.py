@@ -45,6 +45,10 @@ class Student:
         main_frame=Frame(bg_img,bd=2)
         main_frame.place(x=5,y=55,width=1500,height=600)
 
+    # left label frame
+        left_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"))
+        left_frame.place(x=10,y=10,width=660,height=580)
+
 
 
 
