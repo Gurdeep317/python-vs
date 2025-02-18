@@ -16,7 +16,7 @@ class Student:
         f_lbl.place(x=0,y=0,width=500,height=130)
 
     # 2nd image
-        img1=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\face recognition image.png")
+        img1=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\school-facial-recognition.jpg")
         img1=img1.resize((500,130),Image.ANTIALIAS)
         self.photoimg1=ImageTk.PhotoImage(img1)
 
