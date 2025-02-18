@@ -42,6 +42,9 @@ class Student:
         title_lbl=Label(bg_img,text="STUDENT MANAGEMENT SYSTEM",font=("times new roman",35,"bold"),bg="white",fg="darkgreen")
         title_lbl.place(x=0,y=0,width=1530,height=45)
 
+        main_frame=Frame(bg_img,bd=2)
+        main_frame.place(x=5,y=55,width=1500,height=600)
+
 
 
 
