@@ -8,7 +8,7 @@ class Student:
         self.root.title("face recognition system")
 
     # 1st image
-        img=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\university1.jpeg")
+        img=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\face image.png")
         img=img.resize((500,130),Image.ANTIALIAS)
         self.photoimg=ImageTk.PhotoImage(img)
     
@@ -24,7 +24,7 @@ class Student:
         f_lbl.place(x=500,y=0,width=500,height=130)
 
     # 3rd image
-        img2=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\university2.jpg")
+        img2=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\faceimage2.jpeg")
         img2=img2.resize((500,130),Image.ANTIALIAS)
         self.photoimg2=ImageTk.PhotoImage(img2)
 
