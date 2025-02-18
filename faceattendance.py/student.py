@@ -57,10 +57,23 @@ class Student:
         f_lbl.place(x=5,y=0,width=720,height=130)
 
     # current course
-        left_frame=LabelFrame(left_frame,bd=2,bg="white",relief=RIDGE,text="Current Course Information",font=("times new roman",12,"bold"))
-        left_frame.place(x=5,y=135,width=720,height=150)
+        current_course_frame=LabelFrame(left_frame,bd=2,bg="white",relief=RIDGE,text="Current Course Information",font=("times new roman",12,"bold"))
+        current_course_frame.place(x=5,y=135,width=720,height=150)
+
+        dep_label=Label(current_course_frame,text="Department",font=("times new roman",12,"bold"),bg="white")
+        dep_label.grid(row=0,column=0,padx=10)
+
+        dep_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="readonly")
+        dep_combo["values"]=("Select Department","Computer","MNC","ECE","Electrical","Civil","Mechanical")
+        dep_combo.current(0)
+        dep_combo.grid(row=0,column=1,padx=2,pady=10)
+        
         
 
+
+    
+        
+       
 
 
 
