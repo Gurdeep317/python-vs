@@ -49,12 +49,17 @@ class Student:
         left_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"))
         left_frame.place(x=10,y=10,width=730,height=580)
         
-        img_left=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\faceimage2.jpeg")
+        img_left=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\hands1.jpg")
         img_left=img_left.resize((720,130),Image.ANTIALIAS)
         self.photoimg_left=ImageTk.PhotoImage(img_left)
 
         f_lbl=Label(left_frame,image=self.photoimg_left)
         f_lbl.place(x=5,y=0,width=720,height=130)
+
+    # current course
+        left_frame=LabelFrame(left_frame,bd=2,bg="white",relief=RIDGE,text="Current Course Information",font=("times new roman",12,"bold"))
+        left_frame.place(x=5,y=135,width=720,height=150)
+        
 
 
 
