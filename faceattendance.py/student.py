@@ -47,7 +47,26 @@ class Student:
 
     # left label frame
         left_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"))
-        left_frame.place(x=10,y=10,width=660,height=580)
+        left_frame.place(x=10,y=10,width=730,height=580)
+        
+        img_left=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\faceimage2.jpeg")
+        img_left=img_left.resize((720,130),Image.ANTIALIAS)
+        self.photoimg_left=ImageTk.PhotoImage(img_left)
+
+        f_lbl=Label(left_frame,image=self.photoimg_left)
+        f_lbl.place(x=5,y=0,width=720,height=130)
+
+
+
+
+
+
+     
+     # right label frame
+        RIGHT_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"))
+        RIGHT_frame.place(x=750,y=10,width=740,height=580)
+
+
 
 
 
