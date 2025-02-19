@@ -60,13 +60,34 @@ class Student:
         current_course_frame=LabelFrame(left_frame,bd=2,bg="white",relief=RIDGE,text="Current Course Information",font=("times new roman",12,"bold"))
         current_course_frame.place(x=5,y=135,width=720,height=150)
 
+    # Department
         dep_label=Label(current_course_frame,text="Department",font=("times new roman",12,"bold"),bg="white")
-        dep_label.grid(row=0,column=0,padx=10)
+        dep_label.grid(row=0,column=0,padx=10,sticky=W)
 
-        dep_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="readonly")
+        dep_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="readonly",width=20)
         dep_combo["values"]=("Select Department","Computer","MNC","ECE","Electrical","Civil","Mechanical")
         dep_combo.current(0)
-        dep_combo.grid(row=0,column=1,padx=2,pady=10)
+        dep_combo.grid(row=0,column=1,padx=2,pady=10,sticky=W)
+
+    # Course
+        course_label=Label(current_course_frame,text="Course",font=("times new roman",12,"bold"),bg="white")
+        course_label.grid(row=0,column=2,padx=10,sticky=W)
+
+        course_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="readonly",width=20)
+        course_combo["values"]=("Select Course","FE","SE","TE","BE")
+        course_combo.current(0)
+        course_combo.grid(row=0,column=3,padx=2,pady=10,sticky=W)
+        
+        
+    # Year
+        dep_label=Label(current_course_frame,text="Year",font=("times new roman",12,"bold"),bg="white")
+        dep_label.grid(row=0,column=4,padx=10,sticky=W)
+
+        dep_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="readonly",width=20)
+        dep_combo["values"]=("Select Year",)
+        dep_combo.current(0)
+        dep_combo.grid(row=0,column=5,padx=2,pady=10,sticky=W)
+        
         
         
 
