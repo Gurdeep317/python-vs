@@ -77,7 +77,7 @@ class Student:
         course_combo["values"]=("Select Course","FE","SE","TE","BE")
         course_combo.current(0)
         course_combo.grid(row=0,column=3,padx=2,pady=10,sticky=W)
-        
+
         
     # Year
         dep_label=Label(current_course_frame,text="Year",font=("times new roman",12,"bold"),bg="white")
@@ -87,6 +87,8 @@ class Student:
         dep_combo["values"]=("Select Year",)
         dep_combo.current(0)
         dep_combo.grid(row=0,column=5,padx=2,pady=10,sticky=W)
+
+        
         
         
         
