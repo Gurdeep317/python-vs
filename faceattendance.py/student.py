@@ -81,14 +81,24 @@ class Student:
         
     # Year
         dep_label=Label(current_course_frame,text="Year",font=("times new roman",12,"bold"),bg="white")
-        dep_label.grid(row=0,column=4,padx=10,sticky=W)
+        dep_label.grid(row=1,column=0,padx=10,sticky=W)
 
         dep_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="readonly",width=20)
-        dep_combo["values"]=("Select Year",)
+        dep_combo["values"]=("Select Year","2021-25","2022-26","2023-27","2024-28")
         dep_combo.current(0)
-        dep_combo.grid(row=0,column=5,padx=2,pady=10,sticky=W)
+        dep_combo.grid(row=1,column=1,padx=2,pady=10,sticky=W)
 
-        
+    # semester
+        dep_label=Label(current_course_frame,text="Semester",font=("times new roman",12,"bold"),bg="white")
+        dep_label.grid(row=1,column=2,padx=10,sticky=W)
+
+        dep_combo=ttk.Combobox(current_course_frame,font=("times new roman",12,"bold"),state="readonly",width=20)
+        dep_combo["values"]=("Select Semester","Semester-1","Semester-2","Semester-3","Semester-4")
+        dep_combo.current(0)
+        dep_combo.grid(row=1,column=3,padx=2,pady=10,sticky=W)
+
+
+
         
         
         
