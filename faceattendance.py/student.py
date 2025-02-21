@@ -14,6 +14,7 @@ class Student:
     
         f_lbl=Label(self.root,image=self.photoimg)
         f_lbl.place(x=0,y=0,width=500,height=130)
+        
 
     # 2nd image
         img1=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\school-facial-recognition.jpg")
@@ -170,6 +171,8 @@ class Student:
 
         teacher_entry=ttk.Entry(class_student_frame,width=20,font=("times new roman",13,"bold"))
         teacher_entry.grid(row=4,column=3,padx=10,pady=5,sticky=W)
+
+    
 
 
 
