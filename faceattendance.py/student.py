@@ -55,6 +55,7 @@ class Student:
 
         f_lbl=Label(left_frame,image=self.photoimg_left)
         f_lbl.place(x=5,y=0,width=720,height=130)
+        
 
     # current course info
         current_course_frame=LabelFrame(left_frame,bd=2,bg="white",relief=RIDGE,text="Current Course Information",font=("times new roman",12,"bold"))
