@@ -260,6 +260,8 @@ class Student:
         self.student_table.heading("id",text="StudentId")
         self.student_table.heading("name",text="Name")
         self.student_table.heading("div",text="Divison")
+        self.student_table.heading("roll",text="Roll")
+        self.student_table.heading("gender",text="Gender")
         self.student_table.heading("dob",text="DOB")
         self.student_table.heading("email",text="Email")
         self.student_table.heading("phone",text="Phone")
@@ -340,4 +342,4 @@ class Student:
 if __name__=="__main__":
     root=Tk()
     obj=Student(root)
-    root.mainloop
+    root.mainlo
