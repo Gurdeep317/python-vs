@@ -288,16 +288,7 @@ class Student:
 
         self.student_table.pack(fill=BOTH,expand=1)
 
-        
-        
-
-
-        
-
-
-
-
-
+    
 if __name__=="__main__":
     root=Tk()
     obj=Student(root)
