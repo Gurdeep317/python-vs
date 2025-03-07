@@ -9,7 +9,7 @@ class Student:
 
     # 1st image
         img=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\face image.png")
-        img=img.resize((500,130),Image.ANTIALIAS)
+        img=img.resize((500,130),Image.LANCZOS)
         self.photoimg=ImageTk.PhotoImage(img)
     
         f_lbl=Label(self.root,image=self.photoimg)
@@ -17,7 +17,7 @@ class Student:
         
     # 2nd image
         img1=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\school-facial-recognition.jpg")
-        img1=img1.resize((500,130),Image.ANTIALIAS)
+        img1=img1.resize((500,130),Image.LANCZOS)
         self.photoimg1=ImageTk.PhotoImage(img1)
 
         f_lbl=Label(self.root,image=self.photoimg1)
@@ -25,7 +25,7 @@ class Student:
 
     # 3rd image
         img2=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\faceimage2.jpeg")
-        img2=img2.resize((500,130),Image.ANTIALIAS)
+        img2=img2.resize((500,130),Image.LANCZOS)
         self.photoimg2=ImageTk.PhotoImage(img2)
 
         f_lbl=Label(self.root,image=self.photoimg2)
@@ -33,7 +33,7 @@ class Student:
 
     # background image
         img3=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\backgnd.png")
-        img3=img3.resize((1530,710),Image.ANTIALIAS)
+        img3=img3.resize((1530,710),Image.LANCZOS)
         self.photoimg3=ImageTk.PhotoImage(img3)
 
         bg_img=Label(self.root,image=self.photoimg3)
@@ -51,7 +51,7 @@ class Student:
         left_frame.place(x=10,y=10,width=730,height=580)
         
         img_left=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\hands1.jpg")
-        img_left=img_left.resize((720,130),Image.ANTIALIAS)
+        img_left=img_left.resize((720,130),Image.LANCZOS)
         self.photoimg_left=ImageTk.PhotoImage(img_left)
 
         f_lbl=Label(left_frame,image=self.photoimg_left)
@@ -174,37 +174,128 @@ class Student:
         teacher_entry=ttk.Entry(class_student_frame,width=20,font=("times new roman",13,"bold"))
         teacher_entry.grid(row=4,column=3,padx=10,pady=5,sticky=W)
 
-    
+    # radio buttons
+        radiobtn1=ttk.Radiobutton(class_student_frame,text="Take Photo Sample",value="Yes")
+        radiobtn1.grid(row=6,column=0)
 
+        radiobtn2=ttk.Radiobutton(class_student_frame,text="No Photo Sample",value="Yes")
+        radiobtn2.grid(row=6,column=1)
 
+        # button frame
+        btn_frame=Frame(class_student_frame,bd=2,relief=RIDGE,bg="white")
+        btn_frame.place(x=0,y=210,width=715,height=35)
 
+        # save button
+        save_btn=Button(btn_frame,text="Save",width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
+        save_btn.grid(row=0,column=0)
 
+        update_btn=Button(btn_frame,text="Update",width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
+        update_btn.grid(row=0,column=1)
 
+        delete_btn=Button(btn_frame,text="Delete",width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
+        delete_btn.grid(row=0,column=2)
 
+        reset_btn=Button(btn_frame,text="Reset",width=17,font=("times new roman",13,"bold"),bg="blue",fg="white")
+        reset_btn.grid(row=0,column=3)
 
+        btn_frame1=Frame(class_student_frame,bd=2,relief=RIDGE,bg="white")
+        btn_frame1.place(x=0,y=235,width=715,height=35)
 
+        take_photo_btn=Button(btn_frame1,text="Take Photo Sample",width=35,font=("times new roman",13,"bold"),bg="blue",fg="white")
+        take_photo_btn.grid(row=0,column=0)
 
+        update_photo_btn=Button(btn_frame1,text="Update Photo Sample",width=35,font=("times new roman",13,"bold"),bg="blue",fg="white")
+        update_photo_btn.grid(row=0,column=1)
 
-
-
-
-        
-        
-        
-
-
-    
-        
-       
-
-
-
-
-
-     
      # right label frame
         RIGHT_frame=LabelFrame(main_frame,bd=2,bg="white",relief=RIDGE,text="Student Details",font=("times new roman",12,"bold"))
         RIGHT_frame.place(x=750,y=10,width=740,height=580)
+
+        img_right=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\photolaptop.jpeg")
+        img_right=img_right.resize((720,130),Image.LANCZOS)
+        self.photoimg_right=ImageTk.PhotoImage(img_right)
+
+        f_lbl=Label(RIGHT_frame,image=self.photoimg_right)
+        f_lbl.place(x=5,y=0,width=720,height=130)
+        
+        # ==========Search System===========
+        search_frame=LabelFrame(RIGHT_frame,bd=2,bg="white",relief=RIDGE,text="Search System",font=("times new roman",12,"bold"))
+        search_frame.place(x=5,y=135,width=730,height=70)
+
+        search_label=Label(search_frame,text="Search By:",font=("times new roman",15,"bold"),bg="red")
+        search_label.grid(row=0,column=0,padx=10,pady=5,sticky=W)
+
+        search_combo=ttk.Combobox(search_frame,font=("times new roman",12,"bold"),state="readonly",width=15)
+        search_combo["values"]=("Select Search","Roll_no","Phone_no")
+        search_combo.current(0)
+        search_combo.grid(row=0,column=1,padx=2,pady=10,sticky=W)
+
+        search_entry=ttk.Entry(search_frame,width=15,font=("times new roman",13,"bold"))
+        search_entry.grid(row=0,column=2,padx=10,pady=5,sticky=W)
+
+        search_btn=Button(search_frame,text="Search",width=12,font=("times new roman",12,"bold"),bg="blue",fg="white")
+        search_btn.grid(row=0,column=3,padx=4)
+
+        ShowAll_btn=Button(search_frame,text="Show All",width=12,font=("times new roman",12,"bold"),bg="blue",fg="white")
+        ShowAll_btn.grid(row=0,column=4,padx=4)
+    # ======================table frame===========
+        table_frame=Frame(RIGHT_frame,bd=2,bg="white",relief=RIDGE,)
+        table_frame.place(x=5,y=210,width=740,height=350)
+
+        scroll_x=ttk.Scrollbar(table_frame,orient=HORIZONTAL)
+        scroll_y=ttk.Scrollbar(table_frame,orient=VERTICAL)
+
+        self.student_table=ttk.Treeview(table_frame,column=("dep","course","year","sem","id","name","div","roll","gender","dob","email","phone","address","teacher","photo"),xscrollcommand=scroll_x.set,yscrollcommand=scroll_y.set)
+
+        scroll_x.pack(side=BOTTOM,fill=X)
+        scroll_y.pack(side=RIGHT,fill=Y)
+        scroll_x.config(command=self.student_table.xview)
+        scroll_y.config(command=self.student_table.yview)
+
+
+        self.student_table.heading("dep",text="Department")
+        self.student_table.heading("course",text="Course")
+        self.student_table.heading("year",text="Year")
+        self.student_table.heading("sem",text="Semester")
+        self.student_table.heading("id",text="StudentId")
+        self.student_table.heading("name",text="Name")
+        self.student_table.heading("div",text="Divison")
+        self.student_table.heading("dob",text="DOB")
+        self.student_table.heading("email",text="Email")
+        self.student_table.heading("phone",text="Phone")
+        self.student_table.heading("address",text="Address")
+        self.student_table.heading("teacher",text="Teacher")
+        self.student_table.heading("photo",text="PhotoSampleStatus")
+        self.student_table["show"]="headings"
+
+        self.student_table.column("dep",width=100)
+        self.student_table.column("course",width=100)
+        self.student_table.column("year",width=100)
+        self.student_table.column("sem",width=100)
+        self.student_table.column("id",width=100)
+        self.student_table.column("name",width=100)
+        self.student_table.column("roll",width=100)
+        self.student_table.column("gender",width=100)
+        self.student_table.column("div",width=100)
+        self.student_table.column("dob",width=100)
+        self.student_table.column("email",width=100)
+        self.student_table.column("phone",width=100)
+        self.student_table.column("address",width=100)
+        self.student_table.column("teacher",width=100)
+        self.student_table.column("photo",width=150)
+
+        self.student_table.pack(fill=BOTH,expand=1)
+
+        
+        
+
+
+        
+
+
+
+
+    
 
 
 
@@ -249,4 +340,4 @@ class Student:
 if __name__=="__main__":
     root=Tk()
     obj=Student(root)
-    root.mainloop()
+    root.mainloop
