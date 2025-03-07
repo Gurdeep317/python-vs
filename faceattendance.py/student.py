@@ -165,6 +165,7 @@ class Student:
 
         address_entry=ttk.Entry(class_student_frame,width=20,font=("times new roman",13,"bold"))
         address_entry.grid(row=4,column=1,padx=10,pady=5,sticky=W)
+        
 
     # Teacher Name
         teacher_label=Label(class_student_frame,text="Teacher Name:",font=("times new roman",12,"bold"),bg="white")
