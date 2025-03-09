@@ -252,7 +252,6 @@ class Student:
         scroll_x.config(command=self.student_table.xview)
         scroll_y.config(command=self.student_table.yview)
 
-
         self.student_table.heading("dep",text="Department")
         self.student_table.heading("course",text="Course")
         self.student_table.heading("year",text="Year")
@@ -289,7 +288,7 @@ class Student:
         self.student_table.pack(fill=BOTH,expand=1)
 
     
-    
+
 if __name__=="__main__":
     root=Tk()
     obj=Student(root)
