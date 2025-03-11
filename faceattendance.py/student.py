@@ -2,6 +2,9 @@ from tkinter import*
 from tkinter import ttk
 from PIL import Image,ImageTk
 from tkinter import messagebox
+import mysql.connector
+
+
 class Student:
     def __init__(self,root):
         self.root=root
@@ -315,7 +318,7 @@ class Student:
         # =========================function decalaration=============
     def add_data(self):
         if self.var_dep.get()=="Select Department" or self.var_std_name.get()=="" or self.var_std_id.get()=="":
-            messagebox.showerror("Error", "All fields are required")
+            messagebox.showerror("Error", "All fields are required",parent=self.root)
         else:
             pass
 
