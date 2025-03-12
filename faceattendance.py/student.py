@@ -27,10 +27,7 @@ class Student:
         self.var_address=StringVar()
         self.var_teacher=StringVar()
 
-
-
-
-        
+ 
 
     # 1st image
         img=Image.open(r"C:\Users\lenovo\OneDrive\attendanceproject pictures\face image.png")
