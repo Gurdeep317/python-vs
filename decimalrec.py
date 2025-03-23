@@ -10,7 +10,6 @@ def convertdecimal(n):
     print(n%2,end="")
 n=int(input("enter a number:"))
 print("the binary of a given number")
-
 convertdecimal(n)
 
 
