@@ -5,8 +5,6 @@
 list=[]
 # if not list:
 #     print("the list is empty")
-
-
 # using len() function
 print(list)
 if len(list)==0:
