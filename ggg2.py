@@ -23,15 +23,16 @@ end_time = time.time()
 
 print(f"Execution Time: {end_time - start_time:.4f} seconds")
 
-
-best_path = [1, 2, 3, 4]  # Example found by ACO
+# Example found by ACO
+best_path = [1, 2, 3, 4]  
 distances = { (1,2):5, (2,3):10, (3,4):5 }
 
 total_distance = sum(distances[(best_path[i], best_path[i+1])] for i in range(len(best_path)-1))
 print(f"Total Path Distance: {total_distance}")
 
 iterations = list(range(1, 21))
-path_quality = [50, 45, 40, 35, 30, 28, 26, 25, 24, 23, 22, 21, 20, 20, 20, 20, 20, 20, 20, 20]  # Simulated data
+# Simulated data
+path_quality = [50, 45, 40, 35, 30, 28, 26, 25, 24, 23, 22, 21, 20, 20, 20, 20, 20, 20, 20, 20]  
 
 plt.plot(iterations, path_quality, marker='o', linestyle='--', color='b')
 plt.xlabel("Iterations")
