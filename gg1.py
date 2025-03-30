@@ -13,5 +13,8 @@ pheromones = np.array([
 plt.figure(figsize=(5, 5))
 sns.heatmap(pheromones, annot=True, cmap="Blues", cbar=True)
 plt.title("Pheromone Intensity Heatmap")
+
+# save the image
 plt.savefig("aco_heatmap.png", dpi=300)
-plt.show()
+
+plt.show()  
